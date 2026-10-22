@@ -1,0 +1,28 @@
+
+1. Build a "Vulnerability Write-Up & Home Lab" (High Impact)
+
+The most concrete evidence of your skills is showing you understand how the exploit works and how to stop it.
+• The Project: Set up a secure, isolated Docker home lab. Spin up an unpatched version of PHP (e.g., PHP 8.2.34 or below) and try to trigger the memory limit / use-after-free conditions using public safe Proof of Concept (PoC) frameworks (do not attack live systems!). Document the process of updating the environment to the patched versions (8.5.12, 8.4.27, 8.3.36, or 8.2.35) to prove you successfully mitigated the risk.
+• Portfolio Deliverable: Create a GitHub repository containing your Docker compose files and a comprehensive README.md file acting as a technical write-up.
+• Skills Demonstrated: Lab orchestration (Docker), Linux administration, vulnerability verification, and patch management.
+
+2. Write an Automated Discovery Script (Coding Focus)
+
+Organizations are currently struggling to find where PHP is running secretly across their infrastructure. You can write a tool to help them.
+• The Project: Write a lightweight Python or Bash script that automates asset discovery. It could scan a local server or subnet to identify the active PHP versions by parsing system binaries or checking server signatures.
+• Portfolio Deliverable: A GitHub repository housing your script. Ensure your code is clean, commented, and features a clear markdown guide on how an enterprise sysadmin could run it to audit their infrastructure.
+• Skills Demonstrated: Python/Bash scripting, asset inventory, and proactive security auditing.
+
+3. Create a Detection Rule (Blue Team / SIEM Focus)
+
+If you want to lean into a Security Operations Center (SOC) or Blue Team role, show that you know how to detect attackers trying to abuse this flaw.
+• The Project: Research how the exploit functions—such as attackers abusing the upload-progress features via multipart/form-data requests. Write a Snort/Suricata IDS rule, a YARA rule for memory scanning, or a Sigma/Splunk query that triggers when an unauthenticated entity attempts these anomalous requests.
+• Portfolio Deliverable: Add a "Detection Engineering" folder to your GitHub portfolio containing the raw rule files and a breakdown of the logic behind your detection parameters.
+• Skills Demonstrated: Threat hunting, SIEM/IDS engineering, and log analysis.
+
+4. Publish a Clear "Executive Summary" (Consulting / GRC Focus)
+
+Cybersecurity isn't just about code; it’s about communicating risk to business leaders who might not understand what a "use-after-free bug" means.
+• The Project: Write a 1-page executive advisory tailored for a non-technical C-suite audience (e.g., a CEO or CISO). Explain the business risk (unauthenticated Remote Code Execution), the potential impact (data theft, site takeovers), and a clear step-by-step remediation plan.
+• Portfolio Deliverable: Publish this as a professional PDF on your portfolio website or as a text article on your LinkedIn profile to drive industry network engagement.
+• Skills Demonstrated: Technical communication, Risk Assessment, and Governance, Risk, and Compliance (GRC).
